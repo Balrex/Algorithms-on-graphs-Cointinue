@@ -62,5 +62,23 @@ public class TestGraphB {
         }else
             System.out.println("В данном графе нет эйлерова цикла!");
         System.out.println("----------------------");
+        RightA = new int[][]{
+                {0,0,0,1,0,0,0,0},
+                {1,0,0,0,0,0,0,0},
+                {0,1,0,0,1,0,1,0},
+                {1,0,0,0,1,0,0,0},
+                {0,1,0,0,0,0,0,0},
+                {0,0,1,0,1,0,0,0},
+                {0,0,1,0,0,1,0,0},
+                {0,0,0,0,1,0,1,0}};
+        ArrayList<node> LastAnswer = test.Kosaraju(RightA);
+        for (int i=0; i<LastAnswer.size(); ++i){
+            int tmp=i+1;
+            System.out.print("В "+tmp+"-й эргодический входят вершины: ");
+            for (int j=0; j<LastAnswer.get(i).ErgodicСlass.size(); ++j)
+                System.out.print(LastAnswer.get(i).ErgodicСlass.get(j)+" ");
+            System.out.println("");
+        }
+        System.out.println("----------------------");
     }
 }
