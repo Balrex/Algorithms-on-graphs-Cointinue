@@ -5,7 +5,7 @@ public class node {
 
     int prev, next; // для Флёри
 
-    ArrayList<Integer> ErgodicСlass = new ArrayList<>();
+    ArrayList<Integer> ErgodicСlass = new ArrayList<>(); // для Косарайю
     public node(boolean visited, boolean inStak){
         this.inStak=inStak;
         this.visited=visited;
@@ -14,7 +14,5 @@ public class node {
         this.next=next;
         this.prev=prev;
     }
-    public node(int peak){
-        ErgodicСlass.add(peak);
-    }
+    public node(){}
 }
