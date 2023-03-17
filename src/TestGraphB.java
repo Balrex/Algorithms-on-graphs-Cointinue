@@ -45,7 +45,7 @@ public class TestGraphB {
             for (int i=0; i<couples.size(); ++i)
                 System.out.println(couples.get(i).prev+" -> "+couples.get(i).next);
         else
-            System.out.println("В данном графе нет эйлерового цикла!");
+            System.out.println("В данном графе нет эйлерова цикла!");
         System.out.println("----------------------");
         RightA = new int[][]{
                 {0,1,0,0,0,0},
@@ -60,7 +60,7 @@ public class TestGraphB {
                 System.out.print(path.get(i)+" -> ");
             System.out.println("END");
         }else
-            System.out.println("В данном графе нет эйлерового цикла!");
+            System.out.println("В данном графе нет эйлерова цикла!");
         System.out.println("----------------------");
     }
 }
